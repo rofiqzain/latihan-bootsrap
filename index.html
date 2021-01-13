@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="assets/img/main/icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <script src="assets/js/aos.js"></script>
+
+    <title>Biodata Mahasiswa</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav id="nav">
+        <h2 class="logo">
+            <div class="dot"></div>Biodata Mahasiswa
+        </h2>
+        <img id="nav-btn" src="assets/img/icon/nav-menu.png">
+
+    </nav>
+
+    <!-- header -->
+    <header id="header-home">
+        <div class="caption">
+            <h1>
+                Halo !
+            </h1>
+            <h5>
+                Ini adalah biodataku, seorang jomblo yang sedang jomblo, bagaimanakah kelanjutannya? 
+            </h5>
+			 <a href="#intro-home" class="btn-round btn-line-primary">LIHAT YUK!</a>
+
+        </div>
+        
+    </header>
+
+    <div id="intro-home">
+        <div class="banner">
+            <div class="img">
+                <img src="assets/img/main/intro-home1.png" alt="" data-aos="fade-up">
+            </div>
+        </div>
+        <div class="caption">
+            <h4>BIODATAKU</h4>
+            <h5>
+                <table style="width:80%", border=0>
+				  <tr>
+					<th>Nama</th>
+					<td>: Mohammad Rofiq Zain</td>
+				  </tr>
+				  <tr>
+					<th>Tempat Tanggal Lahir</th>
+					<td>: Malang, 11 April 1990</td>
+				  </tr>
+					<tr>
+					<th>Agama </th>
+					<td>: Islam</td>
+				  </tr>
+					<tr>
+					<th>Jenis Kelamin</th>
+					<td>: Laki-Laki</td>
+				  </tr>
+					  <tr>
+					<th>Alamat</th>
+					<td>: Kromengan</td>
+				  </tr>
+					  <tr>
+					<th>Pendidikan Terakhir</th>
+					<td>: SMK</td>
+				  </tr>
+
+				</table>
+            </h5>
+        </div>
+    </div>
+
+    <div id="share-home">
+        <div class="banner" id="share-banner-khusus">
+            <img src="assets/img/main/aids.png" alt="">
+        </div>
+        <div class="caption">
+            <h4>Semester 1</h4>
+            <h5>
+                <ul>
+				  <li>ALGORITMA & STRUKTUR DATA</li>
+				  <li>BAHASA INGGRIS I</li>
+				  <li>DASAR-DASAR AKUNTANSI</li>
+				  <li>LOGIKA INFORMATIKA</li>
+				  <li>MATEMATIKA DASAR</li>
+				  <li>PEMROGRAMAN I</li>
+				  <li>PENDIDIKAN KEWARGANEGARAAN</li>
+				  <li>PENGANTAR MANAJEMEN</li>
+				</ul>  
+            </h5>
+            <!-- <a href="#mother-list-penyakit" class="btn-round btn-line-primary">Ketahui</a> -->
+        </div>
+        <div class="banner">
+            <h4>Semester 2</h4>
+            <h5>
+                <ul>
+				  <li>ANALISIS SISTEM INFORMASI</li>
+				  <li>ARSITEKTUR & ORGANISASI KOMPUTER</li>
+				  <li>BAHASA INDONESIA</li>
+				  <li>BAHASA INGGRIS II</li>
+				  <li>PEMROGRAMAN II</li>
+				  <li>PENDIDIKAN AGAMA ISLAM</li>
+				  <li>PENDIDIKAN PANCASILA</li>
+				  <li>PENGETAHUAN BISNIS</li>
+				  <li>SISTEM BASIS DATA</li>
+				</ul>  
+            </h5>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        &copy; 2020 JOMBLO
+    </footer>
+</body>
+<style>
+    #intro-home .caption {
+        background: none;
+    }
+
+    #list-home {
+        padding: 7em 5% 3em;
+    }
+
+    #mother-list-penyakit .list img {
+        width: 100px;
+        margin-top: -50px;
+    }
+
+    #share-home {
+    margin-bottom: 5em;
+    }
+
+    #share-home .banner {
+        background: url(assets/img/main/bg-list-right.png);
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+	
+	table, th, td {
+  border: 0px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;    
+} 
+	
+</style>
+<script>
+    $(document).ready(function () {
+        $('#nav-btn').click(function () {
+            $('.nav-link').slideToggle();
+        });
+    });
+
+    AOS.init({
+        duration: 1200
+    });
+</script>
+
+</html>

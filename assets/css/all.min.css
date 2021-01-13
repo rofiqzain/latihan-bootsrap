@@ -1,0 +1,556 @@
+@font-face {
+    font-family: monserat;
+    src: url(../font/Montserrat.TTF);
+}
+
+@font-face {
+    font-family: lato;
+    src: url(../font/Lato-Regular.ttf);
+}
+
+* {
+    font-family: lato;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #F8F8F8;
+    margin: 0;
+}
+
+
+/* Navbar */
+
+nav {
+    margin-top: -8px;
+    margin-left: -6px;
+    background: transparent;
+    position: fixed;
+    display: flex;
+    width: 101%;
+    padding: 2em 0;
+    box-shadow: none;
+    align-items: center;
+    z-index: 50;
+    transition: 0.6s;
+}
+
+nav .nav-link {
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+nav a {
+    margin: 0 1em;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+nav h2 {
+    font-size: 1.5em !important;
+}
+
+nav br,
+#nav-btn {
+    display: none;
+    color: #fff;
+}
+
+footer {
+    width: 90%;
+    margin: 0 5%;
+    padding: 1em 0;
+    background: #88c053;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.logo {
+    margin: 0 5%;
+}
+
+.logo .dot {
+    display: inline-block;
+    background: #88c053;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+
+/* header home */
+
+#header-home {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 100vh;
+    background-image: url("../img/main/bg_main.png");
+    background-size: contain;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
+#header-home .caption {
+    padding: 25vh 25% 0 10%;
+}
+
+#header-home .caption a,
+#share-home .caption a,
+#header-kisah .caption a,
+#header-share .caption a {
+    margin: 25px 0;
+}
+
+#header-home .banner img {
+    border-radius: 10px;
+}
+
+#header-home .banner .img-1 {
+    width: 85%;
+    margin: 16vh 10% 0 0;
+}
+
+#header-home .banner .img-2 {
+    width: 95%;
+    margin-top: 0.5em;
+}
+
+#header-home .banner .img-3 {
+    width: 100%;
+    margin-top: 0.5em;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#header-home .banner .img-clop {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+/* intro home */
+
+#intro-home,
+#share-home {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#intro-home .banner {
+    padding: 7em 10%;
+    background: url("../img/main/bg-intro-banner.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#intro-home .banner .img {
+    width: 100%;
+}
+
+#intro-home .banner .img img {
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+#intro-home .caption {
+    padding: 8em 10% 0 0;
+    background: url("../img/main/bg-intro-caption.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#intro-home .caption a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF2E67;
+}
+
+#intro-home .caption h5,
+#share-home .caption h5 {
+    margin-bottom: 1em;
+}
+
+#intro-home .caption img,
+#share-home .caption img {
+    width: 20px;
+    margin-left: 5px;
+}
+
+
+/* list home */
+
+#list-home {
+    padding: 7em 5%;
+    background: url(../img/main/bg-list-left.png), url(../img/main/bg-list-right.png);
+    background-size: 200px;
+    background-position: left bottom, right top;
+    background-repeat: no-repeat;
+}
+
+#list-home .description {
+    width: 75%;
+}
+
+#list-home .list {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin-top: 3em;
+}
+
+#list-home .list .list-item {
+    margin-bottom: 3em;
+    padding: 0 0.5em;
+}
+
+#list-home .list .list-item a {
+    position: relative;
+    float: right;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+#list-home .list .list-item a:hover {
+    padding-bottom: 3px;
+    border-bottom: 2px solid rgb(136, 192, 83);
+}
+
+#list-home .list img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+#list-home .list .card {
+    background: #fff;
+    margin-top: -4px;
+    padding: 15px 20px 40px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+    transition: 0.3s;
+}
+
+#list-home .list .card:hover {
+    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, .2);
+}
+
+#list-home .list .card h5 {
+    color: #000;
+}
+
+#list-home .list .card h6 {
+    margin: 1em 0;
+    color: #000;
+}
+
+#list-home a {
+    position: absolute;
+    right: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF2E67;
+}
+
+#list-home a img {
+    width: 20px;
+    margin-left: 5px;
+    vertical-align: bottom;
+}
+
+
+/* share home */
+
+#share-home {
+    margin-bottom: 7em;
+}
+
+#share-home .caption {
+    padding: 7em 0 0 10%;
+}
+
+#share-home .banner {
+    padding: 7em 10%;
+}
+
+#share-home .banner {
+    background: url("../img/main/bg-share-banner.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#share-home .banner img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#share-home #share-banner-khusus {
+    display: none;
+}
+
+
+/* kisah header */
+
+#header-kisah {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    background: url("../img/main/bg_main-3.png");
+    background-position: top left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#header-kisah .caption {
+    padding: 25vh 10% 0;
+}
+
+#header-kisah .banner img {
+    width: 70%;
+    margin: 25vh 0 0 25%;
+    border-radius: 10px;
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    h1 {
+        font-size: 40px;
+    }
+    /* header home */
+    #header-home .caption {
+        padding: 22vh 15% 0 10%;
+    }
+    #header-home .banner .img-1 {
+        margin: 23vh 10% 0 0;
+    }
+    #intro-home .banner {
+        padding: 7em 7% 7em 10%;
+    }
+    /* intro home */
+    #list-home .description {
+        width: 100%;
+    }
+    #intro-home .caption a {
+        font-size: 18px;
+    }
+    #intro-home .caption h4 {
+        margin: 0.5em 0;
+    }
+    /* list home */
+    #list-home .list {
+        grid-template-columns: 33.3% 33.3% 33.3%;
+    }
+    .list-item-unique {
+        display: none;
+    }
+    /* share home */
+    #share-home .banner {
+        padding: 7em 10% 7em 0;
+    }
+    /* header kisah */
+    #header-kisah .caption {
+        padding: 25vh 10% 0 5%;
+    }
+    /* step share */
+    #step-share .step h5 {
+        width: 100%;
+    }
+    /* share about */
+    #header-about h5 {
+        width: 75%;
+        margin-top: 1em;
+    }
+    /* header single */
+    #header-single .banner img {
+        width: 80%;
+        margin: 25vh 0 0;
+    }
+    #list-penyakit .list h6 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    h4 {
+        font-size: 25px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    /* header home */
+    #header-home {
+        grid-template-columns: 50% 50%;
+    }
+    /* header kisah */
+    #header-kisah .caption {
+        padding: 20vh 10% 0 5%;
+    }
+    #header-kisah .banner img {
+        width: 85%;
+        margin: 28vh 0 0 10%;
+    }
+    /* biodata single */
+    #biodata-single {
+        display: block;
+        margin: 7em 0;
+        background-size: 9em, 100% 100%;
+    }
+    #biodata-single .banner {
+        display: none;
+    }
+    #biodata-single .caption {
+        padding: 5em 10%;
+    }
+    #story-single {
+        display: block;
+    }
+    #story-single .banner {
+        display: none;
+    }
+    #story-single .caption {
+        padding: 0 10%;
+        text-align: justify;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    /* Navbar */
+    #nav-btn {
+        display: block;
+        width: 1.5em;
+        cursor: pointer;
+        position: absolute;
+        right: 10%;
+        margin-top: 3px;
+    }
+    .nav-link {
+        display: none;
+        position: absolute;
+        margin-top: 8em;
+        padding: 1em 1.5em;
+        width: 100%;
+        left: 0;
+        background: #fff
+    }
+    nav a {
+        display: block;
+        color: #000;
+    }
+    nav br {
+        display: block;
+    }
+    nav img {
+        margin-left: 2em;
+    }
+    /* header home  */
+    #header-home {
+        display: block;
+        background-size: 153% 100%;
+        height: 115vh;
+    }
+    #header-home .caption,
+    #header-kisah .caption {
+        text-align: center;
+        padding: 25vh 10%;
+        color: #fff;
+    }
+    #header-home .banner {
+        display: none;
+    }
+    #header-home .btn-line-primary,
+    #header-kisah .btn-line-primary {
+        border: 1px solid #fff;
+        color: #fff;
+    }
+    /* intro home */
+    #intro-home {
+        display: block;
+    }
+    #intro-home .caption {
+        padding: 1em 10%;
+        text-align: center;
+    }
+    #intro-home .banner {
+        padding: 0 10%;
+    }
+    /* list home */
+    #list-home {
+        padding: 7em 10%;
+        text-align: center;
+    }
+    #list-home .list {
+        display: flex;
+        min-width: 100%;
+        margin-right: -12%;
+        overflow-x: auto;
+    }
+    #list-home .list .list-item-unique {
+        display: block;
+    }
+    #list-home .list .list-item {
+        min-width: 14em;
+        margin-bottom: 10px;
+    }
+    #list-home .list::-webkit-scrollbar {
+        width: 0;
+    }
+    /* share home */
+    #share-home {
+        display: block;
+    }
+    #share-home .banner {
+        display: none;
+    }
+    #share-home #share-banner-khusus {
+        display: block;
+        padding: 0 10%;
+        background: none;
+    }
+    #share-home .caption {
+        padding: 1em 10%;
+        text-align: center;
+    }
+  
+}
+
+@media screen and (max-width: 700px) {
+    #header-about {
+        background-size: 70em;
+    }
+}
+	
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 35px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    /* Navbar */
+    nav {
+        padding: 1em 0;
+    }
+    nav br,
+    #nav-btn {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 400px) {}
+
+0
